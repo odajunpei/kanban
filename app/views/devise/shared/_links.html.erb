@@ -1,9 +1,9 @@
 <%- if controller_name != 'sessions' %>
-  <p class="acountPage_link"><%= link_to "アカウントにサインイン", new_session_path(resource_name) %></p>
+  <p class="acountPage_link"><%= link_to "BOMBERMANにサインイン", new_session_path(resource_name) %></p>
 <% end %>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-  <p class="acountPage_link"><%= link_to "アカウントを作成", new_registration_path(resource_name) %></p>
+  <p class="acountPage_link"><%= link_to "チームアカウントを作成", new_registration_path(resource_name) %></p>
 <% end %>
 
 <!--<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>-->

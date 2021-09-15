@@ -1,6 +1,6 @@
 <div class="sinupPage">
   <div class="titleArea">
-    <h1>アカウントを新規作成</h1>
+    <h1>BOMBERMANアカウントを新規作成</h1>
     <div class="m-3">or</div>
     <%= render "devise/shared/links" %>
   </div>
@@ -9,11 +9,11 @@
       <%= devise_error_messages! %>
       <div class="form-group">
         <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control", placeholder: "名前を入力してください" %>
+        <%= f.text_field :name, class: "form-control", placeholder: "チーム名" %>
       </div>
       <div class="form-group">
          <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control", placeholder: "emailを入力してください" ,autocomplete: "email" %>
+        <%= f.email_field :email, class: "form-control", placeholder: "次回ログインorパスワードを忘れたときに使用します！" ,autocomplete: "email" %>
       </div>
       <div class="form-group">
         <%= f.label :password %>
@@ -23,11 +23,11 @@
         <%= f.password_field :password, class: "form-control", placeholder:"パスワードを入力してください", autocomplete: "off" %>
       </div>
       <!--<div class="form-group">-->
-      <!--  <%= f.label :password_confirmation %>-->
-      <!--  <%= f.password_field :password_confirmation, class:"form-control", placeholder: "パスワードを再度入力してください", autocomplete: "off" %>-->
+      <!--  %= f.label :password_confirmation %>-->
+      <!--  %= f.password_field :password_confirmation, class:"form-control", placeholder: "パスワードを再度入力してください", autocomplete: "off" %>-->
       <!--</div>-->
       <div class="text-center">
-        <%= f.submit "アカウントを作成", class: "btn submitBtn" %>
+        <%= f.submit "チームアカウントを作成", class: "btn submitBtn" %>
       </div>
     <% end %>
   </div>

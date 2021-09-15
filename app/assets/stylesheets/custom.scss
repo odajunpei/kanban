@@ -9,7 +9,7 @@ body {
 
 // header
 .header {
-  background: #026aa7;
+  background: #000000;
   padding: 10px;
   .nav {
     .header_menu {
@@ -53,12 +53,11 @@ body {
   }
 }
 
-// button
 .submitBtn {
   background: #29b744;
   color: #fff;
   width: 200px;
-  margin-top: 20px;
+  margin: 20px 0 20px;
   padding: 10px;
   border-radius: 90px;
   transition: opacity .5s;
