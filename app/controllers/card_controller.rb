@@ -20,7 +20,6 @@ class CardController < ApplicationController
   end
 
   def edit
-    # ここに追加
     @lists = List.where(user: current_user)
   end
 
